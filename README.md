@@ -5,7 +5,7 @@ Exploring Time Series Augmentations Using TSGM Library
 - In this tutorial, we explore time series augmentations using the TSGM library.
 - The goal is to produce additional samples that can improve downstream tasks.
 - Gaussian noise augmentation adds random noise to time series, making models more robust.
-- Shuffling features is useful for multivariate time series with invariant feature permutations.
+- Shuffling features are useful for multivariate time series with invariant feature permutations.
 - Slice and shuffle augmentation cuts and shuffles time series segments.
 - Magnitude warping changes the magnitude of each sample in a time series.
 - Window warping speeds up or slows down selected windows in time series data.
@@ -30,7 +30,7 @@ Exploring Time Series Augmentations Using TSGM Library
 
 6. Window Warping:
 - Window warping speeds up or slows down selected windows in time series data.
-- This augmentation can be used to model equipment that changes speed of change over time.
+- This augmentation can be used to model equipment that changes the speed of change over time.
 
 7. Dynamic Time Warping Barycentric Average (DTWBA):
 - DTWBA is an augmentation method based on Dynamic Time Warping (DTW).
@@ -38,8 +38,10 @@ Exploring Time Series Augmentations Using TSGM Library
 
 8. Augmentation with Generative ML Models:
 - Generative ML models can be trained to generate synthetic time series samples.
-- Methods like VAEs, GANs, and Gaussian processes are available in TSGM library.
+- Methods like VAEs, GANs, and Gaussian processes are available in the TSGM library.
 
 9. Analyzing Problem Invariances:
 - A crucial step in problem analysis is determining if the problem is invariant to random noise and feature shuffling.
 - This ensures that the selected methods will improve downstream performance.
+
+Implementing a hybrid model that combines a GAN and VAE (Variational Autoencoder) is a more advanced task. In such a hybrid model, the VAE can help generate more structured and meaningful data, while the GAN can improve the diversity and sharpness of the generated samples.
